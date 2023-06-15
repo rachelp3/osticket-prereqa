@@ -17,42 +17,48 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Virtual Machine
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Remote Desktop Connection
+- IIS installation
+- Files Installation
+- PHP Manager
+- osTicket Launch
 
 <h2>Installation Steps</h2>
 
 <p>
-<img src="<a href="https://imgur.com/DqLV3A9"><img src="https://i.imgur.com/DqLV3A9.png" title="source: imgur.com" /></a>" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img <a href="https://imgur.com/CiNBH09"><img src="https://i.imgur.com/CiNBH09.png" title="source: imgur.com" /></a>
 </p>
 <p>
-Create a virtual resource group and a virtual machine to begin and copy the public IP for the virtual machine. Next, open the Remote Desktop Connection application to log into the virtual machine.
+Create a virtual resource group and a virtual machine to begin and copy the public IP address for the virtual machine. Next, open the Remote Desktop Connection application to log into the virtual machine.
 </p>
 <br />
 
 <p>
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img <a href="https://imgur.com/uA6gACg"><img src="https://i.imgur.com/uA6gACg.png" title="source: imgur.com" /></a>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+On the virtual machine, IIS will need to be installed so osTicket will run properly. Select IIS and expand the folder for more folders to select such as World Wide Web Services, CGI under Application Development feat., and Common HTTP features.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img <a href="https://imgur.com/6h0m3C5"><img src="https://i.imgur.com/6h0m3C5.png" title="source: imgur.com" /></a>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Begin to download and install multiple files that include PHP Manager, Rewrite module, PHP 7.3.8, VC_redist.x86.exe, and MYSQL_5.5.62. For each file, select "download anyway" when prompted.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img <a href="https://imgur.com/T82etkt"><img src="https://i.imgur.com/T82etkt.png" title="source: imgur.com" /></a>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Open IIS as an Admin and navigate to the PHP manager to register PHP with IIS and restart the application.
+
 </p>
-<br />
+<img <a href="https://imgur.com/ibPUyTc"><img src="https://i.imgur.com/ibPUyTc.png" title="source: imgur.com" /></a>
+</p>
+<p>
+Install osTicket and copy the "upload" folder to c:\inetpub\wwwroot renaming it "osTicket". Return to IIS, navigate to sites> default sites > osTicket. Then click browse *80 to see the successful installation of osTicket.
+  
+<a href="https://imgur.com/jT2jHgH"><img src="https://i.imgur.com/jT2jHgH.png" title="source: imgur.com" /></a>
